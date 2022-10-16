@@ -1,0 +1,126 @@
+@import url('./assets/font/Mulish/Mulish-Regular.ttf');
+@import url('./assets/font/Mulish/Mulish-Bold.ttf');
+@import url('./assets/font/Open_Sans/OpenSans-Regular.ttf');
+@import url('./assets/font/Open_Sans/OpenSans-Bold.ttf');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #1f1534;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+/*---------------------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+nav ul,
+main section h1 {
+    font-family: 'Mulish', sans-serif;
+}
+
+nav ul li a {
+    opacity: 0.5;
+    text-decoration: none;
+    color: #1f1534;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/*---------------------------------------------------*/
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section {
+    width: 490px;
+}
+
+main section h1 {
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+}
+
+main section h1 span {
+    color: #89c5cc;
+    font-weight: bold;
+}
+
+main section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+    margin: 40px 0;
+}
+
+main section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #69b99d;
+    border: none;
+    border-radius: 4px;
+    gap: 10px;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+main section button:hover {
+    background-color: #4ea788;
+}
+
+/*---------------------------------------------------*/
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+footer p a {
+    font-weight: bold;
+}
+
+#balls {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+}
